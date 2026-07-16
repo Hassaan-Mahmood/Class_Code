@@ -449,3 +449,163 @@
 //     music11.pause()
 //     music12.pause()
 // }
+
+
+
+
+// // ===================== To Do List ======================
+
+// // HTML
+// <!doctype html>
+// <html lang="en">
+//   <head>
+//     <meta charset="UTF-8" />
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+//     <title>To-Do List</title>
+//     <link rel="stylesheet" href="style.css" />
+//   </head>
+//   <body>
+//     <div class="container">
+//       <h1>📝 To-Do List</h1>
+
+//       <button id="addBtn"  onclick="addTask()">+ Add New Task</button>
+
+//       <ul id="taskList"">
+
+//       </ul>
+//     </div>
+
+//     <script src="app.js"></script>
+//   </body>
+// </html>
+
+
+// // CSS 
+
+// * {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+//   font-family: Arial, Helvetica, sans-serif;
+// }
+
+// body {
+//   height: 100vh;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   background: linear-gradient(135deg, #667eea, #764ba2);
+// }
+
+// .container {
+//   width: 420px;
+//   background: white;
+//   padding: 25px;
+//   border-radius: 20px;
+//   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+// }
+
+// h1 {
+//   text-align: center;
+//   margin-bottom: 20px;
+//   color: #333;
+// }
+
+// #addBtn {
+//   width: 100%;
+//   padding: 14px;
+//   border: none;
+//   border-radius: 10px;
+//   background: #5a67d8;
+//   color: white;
+//   font-size: 16px;
+//   cursor: pointer;
+//   transition: 0.3s;
+// }
+
+// #addBtn:hover {
+//   background: #434190;
+// }
+
+// ul {
+//   margin-top: 20px;
+//   list-style: none;
+// }
+
+// li {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   background: #f8f9ff;
+//   padding: 15px;
+//   margin-bottom: 12px;
+//   border-left: 6px solid #5a67d8;
+//   border-radius: 12px;
+//   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+//   transition: 0.3s;
+// }
+
+// li:hover {
+//   transform: translateX(6px);
+// }
+
+// .task {
+//   cursor: pointer;
+//   color: #333;
+//   font-size: 16px;
+// }
+
+// .completed {
+//   text-decoration: line-through;
+//   color: gray;
+// }
+
+// .delete {
+//   border: none;
+//   background: #ff4d4d;
+//   color: white;
+//   width: 38px;
+//   height: 38px;
+//   border-radius: 50%;
+//   cursor: pointer;
+//   font-size: 18px;
+//   transition: 0.3s;
+// }
+
+// .delete:hover {
+//   background: #d63031;
+//   transform: scale(1.1);
+// }
+
+// // JS
+// var taskList = document.getElementById('taskList')
+
+// var tasks = ["W"];
+
+// function addTask() {
+//     var userTask = prompt("Enter your task?");
+//     if (userTask === "") {
+//         alert("Please fill a value")
+//     } else {
+//         tasks.push(userTask);
+//     }
+// }
+
+
+
+// function displayTasks() {
+//     for (var i = 0; i < tasks.length; i++) {
+//         var data = tasks[i];
+//         // li startingTag + data + li closing tag
+//         taskList.innerHTML = `<li>
+//         <span class="task">${data}</span>
+//         <button class="delete">🗑</button>
+//         </li>`
+//         console.log(data)
+
+//     }   
+// }
+
+
+// displayTasks()
+// console.log(tasks);
