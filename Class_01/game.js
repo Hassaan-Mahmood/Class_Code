@@ -262,5 +262,190 @@
 // }
 
 
+// ====================== Piano ============================
+
+// //HTML
+
+// <!DOCTYPE html>
+// <html lang="en">
+
+// <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Piano</title>
+//     <link rel="stylesheet" href="style.css">
+// </head>
+
+// <body>
+//     <div class="box">
+
+//         <div class="piano">
+//             <div class="white" id="stick1" onclick="piano(1)"></div>
+//             <div class="white" id="stick2" onclick="piano(2)"></div>
+//             <div class="white" id="stick3" onclick="piano(3)"></div>
+//             <div class="white" id="stick4" onclick="piano(4)"></div>
+//             <div class="white" id="stick5" onclick="piano(5)"></div>
+//             <div class="white" id="stick6" onclick="piano(6)"></div>
+//             <div class="white" id="stick7" onclick="piano(7)"></div>
+//             <div class="white" id="stick8" onclick="piano(8)"></div>
+//             <div class="white" id="stick9" onclick="piano(9)"></div>
+//             <div class="white" id="stick10" onclick="piano(10)"></div>
+//             <div class="white" id="stick11" onclick="piano(11)"></div>
+//             <div class="white" id="stick12" onclick="piano(12)"></div>
+
+//             <div class="black b1"></div>
+//             <div class="black b2"></div>
+//             <div class="black b3"></div>
+//             <div class="black b4"></div>
+//             <div class="black b5"></div>
+//             <div class="black b6"></div>
+//             <div class="black b7"></div>
+//             <div class="black b8"></div>
+//         </div>
 
 
+
+//         <button>▶ Play Music</button>
+//     </div>
+
+//     <script src="app.js"></script>
+// </body>
+
+// </html>
+
+
+
+
+// // CSS
+// .box{
+//   background:#111;
+//   padding:25px;
+//   border-radius:20px;
+//   box-shadow:0 0 30px black;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   min-height: 100vh;
+//   flex-direction: column;
+// }
+
+// .piano{
+//   display:flex;
+//   position:relative;
+// }
+
+// .white{
+//   width:45px;
+//   height:200px;
+//   background:white;
+//   border:1px solid #aaa;
+//   border-radius:0 0 8px 8px;
+// }
+
+// .black{
+//   position:absolute;
+//   top:0;
+//   width:28px;
+//   height:120px;
+//   background:#000;
+//   border-radius:0 0 6px 6px;
+// }
+
+// /* black key positions */
+// .b1{left:32px}
+// .b2{left:77px}
+// .b3{left:167px}
+// .b4{left:212px}
+// .b5{left:257px}
+// .b6{left:347px}
+// .b7{left:392px}
+// .b8{left:482px}
+
+// button{
+//   margin-top:20px;
+//   padding:12px 30px;
+//   border:0;
+//   border-radius:25px;
+//   background:#ffd700;
+//   font-size:18px;
+//   cursor:pointer;
+// }
+
+
+
+// // JS
+
+// // // let stick1 = document.getElementById("stick1");
+// // // let stick2 = document.getElementById("stick2");
+// // // let stick3 = document.getElementById("stick3");
+// // // let stick4 = document.getElementById("stick4");
+// // // let stick5 = document.getElementById("stick5");
+// // // let stick6 = document.getElementById("stick6");
+// // // let stick7 = document.getElementById("stick7");
+// // // let stick8 = document.getElementById("stick8");
+// // // let stick9 = document.getElementById("stick9");
+// // // let stick10 = document.getElementById("stick10");
+// // // let stick11 = document.getElementById("stick11");
+// // // let stick12 = document.getElementById("stick12");
+
+// let music1 = new Audio("Music/music-1.mp3");
+// let music2 = new Audio("Music/music-2.mp3");
+// let music3 = new Audio("Music/music-3.mp3");
+// let music4 = new Audio("Music/music-4.mp3");
+// let music5 = new Audio("Music/music-5.mp3");
+// let music6 = new Audio("Music/music-6.mp3");
+// let music7 = new Audio("Music/music-7.mp3");
+// let music8 = new Audio("Music/music-8.mp3");
+// let music9 = new Audio("Music/music-9.mp3");
+// let music10 = new Audio("Music/music-10.mp3");
+// let music11 = new Audio("Music/music-11.mp3");
+// let music12 = new Audio("Music/music-12.mp3");
+
+
+// function piano(index) {
+
+//     pauseSound()
+
+//     if (index === 1) {
+//         music1.play();
+//     } else if (index === 2) {
+//         music2.play();
+//     } else if (index === 3) {
+//         music3.play();
+//     } else if (index === 4) {
+//         music4.play();
+//     } else if (index === 5) {
+//         music5.play();
+//     } else if (index === 6) {
+//         music6.play();
+//     } else if (index === 7) {
+//         music7.play();
+//     } else if (index === 8) {
+//         music8.play();
+//     } else if (index === 9) {
+//         music9.play();
+//     } else if (index === 10) {
+//         music10.play();
+//     } else if (index === 11) {
+//         music11.play();
+//     } else if (index === 12) {
+//         music12.play();
+//     }
+// }
+
+
+
+// function pauseSound() {
+//     music1.pause()
+//     music2.pause()
+//     music3.pause()
+//     music4.pause()
+//     music5.pause()
+//     music6.pause()
+//     music7.pause()
+//     music8.pause()
+//     music9.pause()
+//     music10.pause()
+//     music11.pause()
+//     music12.pause()
+// }
