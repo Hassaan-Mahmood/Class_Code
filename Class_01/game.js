@@ -611,8 +611,42 @@
 // console.log(tasks);
 
 
+// 18 / July / 2026
 
+//================== Pinao ===============
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>12-Key Piano UI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="piano">
+
+    <!-- White Keys (7) -->
+    <div class="white"></div>
+    <div class="white"></div>
+    <div class="white"></div>
+    <div class="white"></div>
+    <div class="white"></div>
+    <div class="white"></div>
+    <div class="white"></div>
+
+    <!-- Black Keys (5) -->
+    <div class="black b1"></div>
+    <div class="black b2"></div>
+    <div class="black b3"></div>
+    <div class="black b4"></div>
+    <div class="black b5"></div>
+
+</div>
+
+</body>
+</html>
 
 
 
