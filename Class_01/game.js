@@ -651,8 +651,83 @@
 
 
 
+// css 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #222;
+    font-family: Arial, sans-serif;
+}
 
+.piano {
+    position: relative;
+    display: flex;
+    background: #111;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .5);
+}
+
+/* White Keys */
+.white {
+    width: 70px;
+    height: 280px;
+    background: white;
+    border: 1px solid #444;
+    border-radius: 0 0 8px 8px;
+    margin-right: 2px;
+    cursor: pointer;
+    transition: .15s;
+}
+
+.white:active {
+    background: #ddd;
+}
+
+/* Black Keys */
+.black {
+    position: absolute;
+    width: 45px;
+    height: 170px;
+    background: #111;
+    border-radius: 0 0 6px 6px;
+    z-index: 10;
+    cursor: pointer;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, .5);
+}
+
+.black:active {
+    background: #444;
+}
+
+/* Black key positions */
+.b1 {
+    left: 60px;
+}
+
+.b2 {
+    left: 132px;
+}
+
+.b3 {
+    left: 276px;
+}
+
+.b4 {
+    left: 348px;
+}
+
+.b5 {
+    left: 420px;
+}
 
 
 
