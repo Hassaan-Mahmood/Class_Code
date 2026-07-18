@@ -732,14 +732,207 @@
 
 
 
+// =-==================== To Do List ====================
+
+// // JS
+// var taskList = document.getElementById('taskList');
+
+// var tasks = []
+
+// function addTask() {
+//     var userTask = prompt("Enter your task?");
+//     if (userTask === "") {
+//         alert("Please fill a value")
+//     } else {
+//         tasks.push(userTask);
+//         displayTasks()
+//     }
+// }
+
+
+// function displayTasks() {
+//     taskList.innerHTML = ""
+//     for (var i = 0; i < tasks.length; i++) {
+//         var item = tasks[i];
+//         taskList.innerHTML += `<li>
+//            <span class="task">${item}</span>
+//           <div>
+//             <button class="delete" onclick="deleteList(${i})">🗑</button>
+//             <button class="edit" onclick="editTask(${i})">✏️</button>
+//           </div>
+//         </li>`
+//     }
+// }
+
+// // var number = 10;
+// // number += 20;
+// // console.log(number);
+
+// function deleteList(index) {
+//     tasks.splice(index, 1);
+//     displayTasks();
+//     // console.log("Hello");
+// }
+
+
+// function editTask (index){
+//     // tasks.slice(index)
+//     let data = tasks[index]
+//     let newTask = prompt("Edit Your Task", data)
+//     tasks.splice(index, 1, newTask);
+//     displayTasks();
+// }
+
+
+// // css
+
+
+// *{
+//     margin:0;
+//     padding:0;
+//     box-sizing:border-box;
+//     font-family:Arial, Helvetica, sans-serif;
+// }
+
+// body{
+//     background:#f4f6f9;
+//     display:flex;
+//     justify-content:center;
+//     align-items:center;
+//     min-height:100vh;
+// }
+
+// .container{
+//     width:420px;
+//     background:#fff;
+//     padding:25px;
+//     border-radius:12px;
+//     box-shadow:0 10px 25px rgba(0,0,0,.15);
+// }
+
+// h2{
+//     text-align:center;
+//     color:#333;
+//     margin-bottom:20px;
+// }
+
+// .input-area{
+//     display:flex;
+//     gap:10px;
+//     margin-bottom:20px;
+// }
+
+// input{
+//     flex:1;
+//     padding:12px;
+//     border:2px solid #ddd;
+//     border-radius:8px;
+//     outline:none;
+//     font-size:16px;
+// }
+
+// input:focus{
+//     border-color:#4CAF50;
+// }
+
+// #addBtn{
+//     padding:12px 18px;
+//     background:#4CAF50;
+//     color:white;
+//     border:none;
+//     border-radius:8px;
+//     cursor:pointer;
+//     font-weight:bold;
+//     width: 100%;
+// }
+
+// #addBtn:hover{
+//     background:#43a047;
+// }
+
+// ul{
+//     list-style:none;
+// }
+
+// li{
+//     background:#f8f8f8;
+//     margin-bottom:12px;
+//     padding:12px;
+//     border-radius:8px;
+//     display:flex;
+//     justify-content:space-between;
+//     align-items:center;
+// }
+
+// .task{
+//     flex:1;
+//     color:#333;
+//     font-size:17px;
+// }
+
+// .buttons{
+//     display:flex;
+//     gap:8px;
+// }
+
+// button{
+//     border:none;
+//     padding:8px 12px;
+//     border-radius:6px;
+//     color:white;
+//     cursor:pointer;
+// }
+
+// .edit{
+//     background:#2196F3;
+// }
+
+// .edit:hover{
+//     background:#1976D2;
+// }
+
+// .delete{
+//     background:#f44336;
+// }
+
+// .delete:hover{
+//     background:#d32f2f;
+// }
 
 
 
+// HTML
+// <!DOCTYPE html>
+// <html lang="en">
 
+// <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>To-Do App</title>
+//     <link rel="stylesheet" href="style.css">
+// </head>
 
+// <body>
 
+//     <div class="container">
 
+//         <h2>📝 To-Do App</h2>
 
+//         <div class="input-area">
+//             <!-- <input type="text" id="taskInput" placeholder="Enter a task..."> -->
+//             <button id="addBtn" onclick="addTask()">Add New Task</button>
+//         </div>
+
+//         <ul id="taskList"></ul>
+        
+
+//     </div>
+
+//     <script src="app.js"></script>
+
+// </body>
+
+// </html>
 
 
 
