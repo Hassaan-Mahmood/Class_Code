@@ -615,119 +615,119 @@
 
 //================== Pinao ===============
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>12-Key Piano UI</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
+// <!DOCTYPE html>
+// <html lang="en">
+// <head>
+// <meta charset="UTF-8">
+// <meta name="viewport" content="width=device-width, initial-scale=1.0">
+// <title>12-Key Piano UI</title>
+// <link rel="stylesheet" href="style.css">
+// </head>
+// <body>
 
-<div class="piano">
+// <div class="piano">
 
-    <!-- White Keys (7) -->
-    <div class="white"></div>
-    <div class="white"></div>
-    <div class="white"></div>
-    <div class="white"></div>
-    <div class="white"></div>
-    <div class="white"></div>
-    <div class="white"></div>
+//     <!-- White Keys (7) -->
+//     <div class="white"></div>
+//     <div class="white"></div>
+//     <div class="white"></div>
+//     <div class="white"></div>
+//     <div class="white"></div>
+//     <div class="white"></div>
+//     <div class="white"></div>
 
-    <!-- Black Keys (5) -->
-    <div class="black b1"></div>
-    <div class="black b2"></div>
-    <div class="black b3"></div>
-    <div class="black b4"></div>
-    <div class="black b5"></div>
+//     <!-- Black Keys (5) -->
+//     <div class="black b1"></div>
+//     <div class="black b2"></div>
+//     <div class="black b3"></div>
+//     <div class="black b4"></div>
+//     <div class="black b5"></div>
 
-</div>
+// </div>
 
-</body>
-</html>
-
-
+// </body>
+// </html>
 
 
-// css 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: #222;
-    font-family: Arial, sans-serif;
-}
 
-.piano {
-    position: relative;
-    display: flex;
-    background: #111;
-    padding: 15px;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, .5);
-}
+// // css 
+// * {
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+// }
 
-/* White Keys */
-.white {
-    width: 70px;
-    height: 280px;
-    background: white;
-    border: 1px solid #444;
-    border-radius: 0 0 8px 8px;
-    margin-right: 2px;
-    cursor: pointer;
-    transition: .15s;
-}
+// body {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100vh;
+//     background: #222;
+//     font-family: Arial, sans-serif;
+// }
 
-.white:active {
-    background: #ddd;
-}
+// .piano {
+//     position: relative;
+//     display: flex;
+//     background: #111;
+//     padding: 15px;
+//     border-radius: 12px;
+//     box-shadow: 0 10px 25px rgba(0, 0, 0, .5);
+// }
 
-/* Black Keys */
-.black {
-    position: absolute;
-    width: 45px;
-    height: 170px;
-    background: #111;
-    border-radius: 0 0 6px 6px;
-    z-index: 10;
-    cursor: pointer;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, .5);
-}
+// /* White Keys */
+// .white {
+//     width: 70px;
+//     height: 280px;
+//     background: white;
+//     border: 1px solid #444;
+//     border-radius: 0 0 8px 8px;
+//     margin-right: 2px;
+//     cursor: pointer;
+//     transition: .15s;
+// }
 
-.black:active {
-    background: #444;
-}
+// .white:active {
+//     background: #ddd;
+// }
 
-/* Black key positions */
-.b1 {
-    left: 60px;
-}
+// /* Black Keys */
+// .black {
+//     position: absolute;
+//     width: 45px;
+//     height: 170px;
+//     background: #111;
+//     border-radius: 0 0 6px 6px;
+//     z-index: 10;
+//     cursor: pointer;
+//     box-shadow: 2px 2px 8px rgba(0, 0, 0, .5);
+// }
 
-.b2 {
-    left: 132px;
-}
+// .black:active {
+//     background: #444;
+// }
 
-.b3 {
-    left: 276px;
-}
+// /* Black key positions */
+// .b1 {
+//     left: 60px;
+// }
 
-.b4 {
-    left: 348px;
-}
+// .b2 {
+//     left: 132px;
+// }
 
-.b5 {
-    left: 420px;
-}
+// .b3 {
+//     left: 276px;
+// }
+
+// .b4 {
+//     left: 348px;
+// }
+
+// .b5 {
+//     left: 420px;
+// }
 
 
 
