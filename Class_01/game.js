@@ -1,12 +1,3 @@
-hello 1
-hello 2
-hello 3
-hello 4
-
-hello 5
-hello 6
-hello 7
-
 
 // <!doctype html>
 // <html lang="en">
@@ -945,12 +936,380 @@ hello 7
 // </html>
 
 
-console.log(1);
-console.log(2);
-console.log(3);
-console.log(4);
 
 
 
+
+
+
+
+// ======================================TO DO APP================================================
+
+// <!DOCTYPE html>
+// <html lang="en">
+// <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Animated Todo App</title>
+//     <link rel="stylesheet" href="style.css">
+// </head>
+// <body>
+
+// <div class="container">
+//     <h1>📝 Todo List</h1>
+
+//     <div class="input-box">
+//         <input type="text" id="taskInput" placeholder="Enter a task...">
+//         <button onclick="addTask()">Add</button>
+//     </div>
+
+//     <ul id="taskList"></ul>
+// </div>
+
+// <script src="script.js"></script>
+// </body>
+// </html> 
+
+
+
+
+
+
+// * {
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+//     font-family: Arial, Helvetica, sans-serif;
+// }
+
+// body {
+//     height: 100vh;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     overflow: hidden;
+//     background: linear-gradient(-45deg, #ff6b6b, #6c5ce7, #00cec9, #fdcb6e);
+//     background-size: 400% 400%;
+//     animation: gradient 12s ease infinite;
+// }
+
+// @keyframes gradient {
+//     0% {
+//         background-position: 0% 50%;
+//     }
+
+//     50% {
+//         background-position: 100% 50%;
+//     }
+
+//     100% {
+//         background-position: 0% 50%;
+//     }
+// }
+
+// .container {
+//     width: 420px;
+//     max-width: 90%;
+//     padding: 30px;
+//     border-radius: 20px;
+//     backdrop-filter: blur(15px);
+//     background: rgba(255, 255, 255, 0.15);
+//     border: 1px solid rgba(255, 255, 255, .3);
+//     box-shadow: 0 10px 30px rgba(0, 0, 0, .3);
+// }
+
+// h1 {
+//     text-align: center;
+//     color: #fff;
+//     margin-bottom: 20px;
+// }
+
+// .input-box {
+//     display: flex;
+//     gap: 10px;
+// }
+
+// .input-box input {
+//     flex: 1;
+//     padding: 20px;
+//     border: none;
+//     border-radius: 10px;
+//     outline: none;
+//     font-size: 16px;
+// }
+
+// .input-box button {
+//     padding: 12px 18px;
+//     border: none;
+//     border-radius: 10px;
+//     background: #00b894;
+//     color: #fff;
+//     cursor: pointer;
+//     font-size: 16px;
+//     transition: .3s;
+// }
+
+// .input-box button:hover {
+//     background: #00a383;
+// }
+
+// ul {
+//     list-style: none;
+//     margin-top: 20px;
+// }
+
+// li {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding: 12px;
+//     margin-top: 10px;
+//     border-radius: 10px;
+//     background: rgba(255, 255, 255, .25);
+//     color: #fff;
+//     animation: slide .3s ease;
+// }
+
+// @keyframes slide {
+//     from {
+//         transform: translateY(-20px);
+//         opacity: 0;
+//     }
+
+//     to {
+//         transform: translateY(0);
+//         opacity: 1;
+//     }
+// }
+
+// .task {
+//     cursor: pointer;
+//     flex: 1;
+// }
+
+// .completed {
+//     text-decoration: line-through;
+//     opacity: .6;
+// }
+
+// .delete-btn {
+//     background: #ff4757;
+//     color: white;
+//     border: none;
+//     padding: 8px 12px;
+//     border-radius: 8px;
+//     cursor: pointer;
+//     transition: .3s;
+// }
+
+// .delete-btn:hover {
+//     background: #e84118;
+// }
+
+
+
+
+
+
+// const input = document.getElementById("taskInput");
+// const list = document.getElementById("taskList");
+
+// function addTask() {
+
+//     const text = input.value.trim();
+
+//     if(text === "") return;
+
+//     const li = document.createElement("li");
+
+//     const span = document.createElement("span");
+//     span.className = "task";
+//     span.innerText = text;
+
+//     span.onclick = function(){
+//         span.classList.toggle("completed");
+//     };
+
+//     const del = document.createElement("button");
+//     del.innerHTML = "Delete";
+//     del.className = "delete-btn";
+
+//     del.onclick = function(){
+//         li.remove();
+//     };
+
+//     li.appendChild(span);
+//     li.appendChild(del);
+
+//     list.appendChild(li);
+
+//     input.value="";
+//     input.focus();
+// }
+
+// input.addEventListener("keypress", function(e){
+//     if(e.key==="Enter"){
+//         addTask();
+//     }
+// });
+
+
+
+
+
+
+
+// var taskList = document.getElementById('taskList');
+// var tasks = []  // [1,2,3,4,5]
+
+// function addTask() {
+//     var userTask = prompt("Enter your task?");
+//     if (userTask === "") {
+//         alert("Please fill a value")
+//     } else {
+//         tasks.push(userTask);
+//         localStorage.setItem('todos', JSON.stringify(tasks))
+//         displayTasks()
+//     }
+// }
+
+// function displayTasks() {
+//     taskList.innerHTML = "";
+//     var data = localStorage.getItem('todos');
+
+//     if (data) {
+//         var parseData = JSON.parse(data);
+//         // storage [1,2,3,4,5]
+//         tasks = parseData;
+//     }
+
+//     for (var i = 0; i < tasks.length; i++) {
+//         var item = tasks[i];
+//         // opening tag + item + tag + inndex parameter + closing tag
+//         taskList.innerHTML += `<li>
+//           <span class="task">${item}</span>
+//           <div>
+//             <button class="delete" onclick="deleteTask(${i})">🗑</button>
+//             <button class="edit" onclick="editTask(${i})">✏️</button>
+//           </div>
+//         </li>`
+//     }
+// }
+
+// function deleteTask(index) {
+//     tasks.splice(index, 1);
+//     // [1,2,3,4] delete from local also update local storage
+//     localStorage.setItem('todos', JSON.stringify(tasks))
+//     displayTasks()
+// }
+
+// function editTask(index) {
+//     // console.log(index);
+//     // console.log(tasks[1]);
+//     // var data = tasks[index];
+
+//     var userValue = prompt("Please update your value", tasks[index]);
+//     tasks.splice(index, 1, userValue);
+//     // [1,2,3,4,5]
+//     // [1,2,3,4,6]
+//     localStorage.setItem('todos', JSON.stringify(tasks))
+//     displayTasks()
+// }
+
+// displayTasks();
+
+// setItem
+// getItem
+// removeItem
+
+// key value pair
+
+// localStorage.setItem("user", ["Ali", "Huzaifa"]);
+// localStorage.setItem("user", "Sadiq");
+// var data = localStorage.getItem("user")
+// console.log(data);
+
+// localStorage.removeItem('user')
+
+
+// var fruits = ["Apple", "Mango"];
+// localStorage.setItem('fruits', JSON.stringify(fruits))
+// var data = localStorage.getItem("fruits");
+// if (data !== null) {
+//     var parsedData = JSON.parse(data)
+//     console.log(parsedData);
+// }
+
+// function sum(number1, number2) {
+//     console.log(number1 + number2);
+// }
+
+
+
+
+
+// Crud Operation on Storage & Database
+
+
+
+
+
+
+// let input = document.getElementById("taskInput");
+// let list = document.getElementById("taskList");
+// let text = input.value;
+// let tasks = [];
+
+// function addTask() {
+//     if (text === ""){
+//         alert("Please enter a valid value")
+//     } else {
+//         tasks.push(text);
+//         localStorage.setItem("todos", JSON.stringify(tasks));
+//         displayTask();
+//         // console.log(text)
+//     }
+
+// }
+
+
+// function displayTask (){
+//     text = "";
+//     let data = localStorage.getItem("todos");
+//     if (data !== null){
+//         let parseData = JSON.parse(data);
+//     }
+
+// }
+
+
+// var num = 10;
+
+// if (true) {
+//     var num = 20;
+// }
+
+// console.log(num);
+
+// for (var i = 0; i < 10; i++) {
+//     var num = i;
+//     console.log(num);
+// }
+
+
+// var totalSum;
+// var totalSum = "hello";
+
+// function sum (number1, number2){
+//     var total = number1 + number2;
+//     totalSum = total;
+//     // return total
+// }
+//  var totalSum = sum(5,5);
+
+
+// console.log(totalSum);
+// sum(19, 1);
+// console.log(totalSum);
 
 
